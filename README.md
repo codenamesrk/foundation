@@ -1,106 +1,57 @@
-Welcome to Foundation
-=====================
+# [Foundation for Sites](http://foundation.zurb.com)
 
-Foundation is the most advanced responsive front-end framework in the world. With Foundation you can quickly prototype and build sites or apps that work on any kind of device, with tons of included layout constructs (like a full responsive grid), elements and best practices.
+[![Build Status](https://travis-ci.org/zurb/foundation-sites.svg?branch=develop)](https://travis-ci.org/zurb/foundation-sites)
+[![npm version](https://badge.fury.io/js/foundation-sites.svg)](https://badge.fury.io/js/foundation-sites)
+[![Bower version](https://badge.fury.io/bo/foundation-sites.svg)](https://badge.fury.io/bo/foundation-sites)
+[![Gem Version](https://badge.fury.io/rb/foundation-rails.svg)](https://badge.fury.io/rb/foundation-rails)
+[![CDNJS](https://img.shields.io/cdnjs/v/foundation.svg)](https://cdnjs.com/libraries/foundation)
+[![dependencies Status](https://david-dm.org/zurb/foundation-sites/status.svg)](https://david-dm.org/zurb/foundation-sites)
+[![devDependencies Status](https://david-dm.org/zurb/foundation-sites/dev-status.svg)](https://david-dm.org/zurb/foundation-sites?type=dev)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zurb/foundation-sites?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-Homepage:      http://foundation.zurb.com
-Documentation: http://foundation.zurb.com/docs
-Download:      http://foundation.zurb.com/download.php
+Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes a fully customizable, responsive grid, a large library of Sass mixins, commonly used JavaScript plugins, and full accessibility support.
 
-Foundation is MIT-licensed and absolutely free to use. Foundation wouldn't be possible without the support of the entire ZURB team, our friends and colleagues who gave feedback, and some luminaries who did some heavy lifting that we took advantage of (thanks guys).
+## Getting Started
 
-Repo Contents
-=============
+The quickest way to get started is with the [basic CSS download](http://foundation.zurb.com/sites/download/). You can get versions with every component, essential ones only, or a custom build.
 
-* Base Source and Compilation Files for SCSS
-* Marketing Site
-* Docs
-* README
+If you're a Sass user, we have two starter project templates, the [Basic Template](https://github.com/zurb/foundation-sites-template) and the [ZURB Template](https://github.com/zurb/foundation-zurb-template). You can install them by manually downloading them from GitHub, or using the [Foundation CLI](https://github.com/zurb/foundation-cli).
 
-ZURB
-====
+Lastly, if you're rolling your own setup, you can install Foundation through a variety of [package managers](http://foundation.zurb.com/sites/docs/installation.html#package-managers).
 
-Foundation was made by [ZURB](http://www.zurb.com), a product design company in Campbell, CA.
+## Documentation
 
-If Foundation knocks your socks off the way we hope it does and you want more, why not check out [our jobs](http://www.zurb.com/talent)?
+The documentation can be found at <https://foundation.zurb.com/sites/docs>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer. (Your Node.js version must be **4.0** or higher.)
 
-Community
-=========
+Run these commands to set up the documentation:
 
-Many thanks to all the people working on Foundation either to improve the base code or to support specific frameworks. If you want to get on this readme send an email to foundation@zurb.com, and if you have questions you can join the Unofficial Foundation Google Group here: http://groups.google.com/group/foundation-framework-
+```bash
+git clone https://github.com/zurb/foundation-sites
+cd foundation-sites
+npm install
+```
 
-WordPress
+Then run `npm start` to compile the documentation. When it finishes, a new browser window will open pointing to a BrowserSync server displaying the documentation.
 
-* [Starter Theme](https://github.com/drewsymo/Foundation) by Drew Morris
-* [Reverie](http://themefortress.com/reverie/) by Zhen
-* [WP-Foundation](http://320press.com/wp-foundation/features/) by 320press
+## Training
 
-Joomla
+Want the guided tour to Foundation from the team that built it? The ZURB team offers comprehensive training courses for developers of all skill levels. If you're new to Foundation, check out the [Introduction to Foundation Course](http://zurb.com/university/foundation-intro?utm_source=Github%20Repo&utm_medium=website&utm_campaign=readme&utm_content=readme%20training%20link) to kickstart your skills, amplify your productivity, and get a comprehensive overview of everything Foundation has to offer. More Advanced users should check out the [Advanced Foundation Course](http://zurb.com/university/advanced-foundation-training?utm_source=Github%20Repo&utm_medium=website&utm_campaign=readme&utm_content=readme%20training%20link) to learn the Advanced skills that ZURB uses to deliver quality client work in short timeframes.
 
-* [Joomla Template](https://github.com/meridiansoftech/joomla_foundation_template) by Arnold Mwumva Ford, Meridian Softech
-* [Joomla Template](https://github.com/antonydoyle/siegeengine) by Antony Doyle, Siege21
+## Testing
 
-Drupal
+Foundation has three kinds of tests: JavaScript, Sass, and visual regression. Refer to our [testing guide](https://github.com/zurb/foundation-sites/wiki/Testing-Guide) for more details.
 
-* [Drupal Theme](https://github.com/drewkennelly/foundation7) by Drew Kennelly
+These commands will run the various tests:
 
-PyroCMS
+- `npm run test:sass`
+- `npm run test:javascript:phantomjs`
+- `npm run test:visual`
 
-* [PyroYeti - PyroCMS Theme](https://github.com/pyrosuit/PyroYeti) by [Arnold Mwumva Ford](https://twitter.com/fordarnold) , Meridian Softech
+Testing Supported By<br/>
+<img width="160" src="http://foundation.zurb.com/sites/docs/assets/img/logos/browser-stack.svg" alt="BrowserStack"/>
 
-Django
+## Contributing
 
-* [A foundation theme for the Pinax](http://pypi.python.org/pypi/pinax-theme-foundation) by Christopher Clarke, Kwesi Aguillera & Lendl Smith
+Check out our [contributing guide](http://foundation.zurb.com/develop/contribute.html) to learn how you can contribute to Foundation. You can also browse the [Help Wanted](https://github.com/zurb/foundation-sites/labels/help%20wanted) tag in our issue tracker to find things to do.
 
-MODX
-
-* [MODX Version](http://designfromwithin.com/blog/2012/02/07/foundation-modx/) by Menno Pietersen
-
-.NET
-
-* [NuGet Package for ASP.Net MVC](http://www.nuget.org/packages/Foundation3_MVC4) by Edward Charbeneau, @EdCharbeneau
-
-
-CodeIgniter
-
-* [Responsive CodeIgniter BoilerPlate](https://github.com/meridiansoftech/meridian_ci_codebase) by [Arnold Mwumva Ford](https://twitter.com/fordarnold) , Meridian Softech
-
-Other Implementations
-
-* [Mobile First](https://github.com/adamfairhead/mobile-first-foundation) by Adam Fairhead
-* [Less Version](https://github.com/justinmarsan/FoundationLess) by Justin Marsan
-* [Less with Color Scheme](https://github.com/matalin/FoundationLess) by Matalin Hatchard
-
-Editors
-
-* [Textmate/Sublime Text2 Bundle](https://github.com/liamr/Zurb-Foundation-Textmate-Bundle) by Liam R, @liamr
-
-PSD Templates
-
-* [Desktop, Tablet and Phone Grid Templates](http://foundation.zurb.com/files/foundation-psd-templates.zip ) by Bruce Abel at Portfolio Creative Services Group
-
-Grid Generator
-
-* [Experimental Grid Generator](http://www.gridlover.net/foundation/) courtesy of [Ville Vanninen](http://foolproof.me)
-
-Grid displayer
-
-* [Grid displayer bookmarklet](http://alefeuvre.github.com/foundation-grid-displayer/) by [Antoine Lefeuvre](http://twitter.com/jiraisurfer)
-* [Responsive Design Bookmarklet](http://responsive.victorcoulon.fr/) by [Victor Coulon](https://twitter.com/_victa)
-
-Modular Scale
-
-* [Modular Scale](https://github.com/scottkellum/modular-scale) by Mason Wendell and Scott Kellum
-
-Ruby on Rails SASS Gems
-
-* [Foundation Icons 2](https://github.com/zaiste/foundation-icons-sass-rails) by J. P. Nowak
-
-MIT Open Source License
-=======================
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright (c) 2017 ZURB, inc.
